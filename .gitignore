@@ -1,0 +1,4 @@
+__pycache__/
+*.pyc
+data/emb_minilm.npy
+.venv/

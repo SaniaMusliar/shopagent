@@ -1,0 +1,7 @@
+fastapi
+uvicorn
+# optional: better semantic matching. After installing, run:  python backend/download_model.py   (one-time, ~90 MB)
+# sentence-transformers
+# dev/testing only:
+pytest
+httpx
