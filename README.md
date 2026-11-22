@@ -1,4 +1,4 @@
-# AI Shopping Agent: Intelligent Footwear Recommendation (CIA-2)
+# AI Shopping Agent: Intelligent Footwear Recommendation
 Free, offline, no API keys. Data: Myntra India footwear listings from a Kaggle dataset, May-2023 snapshot.
 
 ## Run (Windows PowerShell)
@@ -18,9 +18,10 @@ Controls: Previous / Next / Play / Pause / Replay stage / Restart, speed 0.5x to
 Query -> Security -> Domain check -> Intent -> Hard constraints -> Retrieval -> Hard filter -> Ranking -> Explanation.
 Hard constraints (type, colour, gender, brand, budget, availability) are never relaxed. If nothing matches: NO EXACT MATCH FOUND.
 
-## Data limitations (documented honestly)
+## Data limitations
 Prices are a May-2023 snapshot. Colour is known for ~66% of products and gender for ~89%; unknown values never satisfy a requested colour/gender.
-The dataset has no size or live-stock fields; the app therefore treats records as catalogue listings, not confirmed live inventory. Ratings exist for ~38% of products. Product images and listing links are hosted/owned by Myntra. Use this dataset only in accordance with the dataset/platform terms; this project is intended as an academic, non-commercial demo.
+The dataset has no size or live-stock fields; the app therefore treats records as catalogue listings, not confirmed live inventory. Ratings exist for ~38% of products. 
+Product images and listing links are hosted/owned by Myntra. Use this dataset only in accordance with the dataset/platform terms; this project is intended as an academic, non-commercial demo.
 
 ## Test checklist (open http://localhost:8000)
 1. Shop: click each demo chip. Queries 1-6 show products, 7 shows NO EXACT MATCH FOUND, "laptop" shows OUTSIDE CURRENT CATALOGUE.
